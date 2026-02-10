@@ -1,4 +1,4 @@
-message = "72\u00B0C"
+message = "72\u00B0F"
 print(f"message: {message}")
 print(f"type(message): {type(message)}")
 print(f"len(message): {len(message)}")

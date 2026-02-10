@@ -9,6 +9,7 @@ sorted_fruit = sorted(fruits)  # sorted() returns a list
 
 print(f"{sorted_fruit = }\n")
 
+# >  < 
 nums = [800, 80, 1000, 32, -3, 8, 18, 255, 400, 5, 5000]
 
 print(f"{sorted(nums) = }")

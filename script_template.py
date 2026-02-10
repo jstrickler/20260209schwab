@@ -3,12 +3,12 @@ This is the doc string for the module/script.
 """
 import sys
 
-# other imports  (standard library, standard non-library, local)
+# other imports  (standard library, third-party, local)
 
 # constants (AKA global variables -- keep these to a minimum)
 
 # main function
-def main(args):
+def main(args):   # could be named "fandango"
     """
     This is the docstring for the main() function
 
@@ -26,5 +26,9 @@ def function1():
     """
     print("this is function1()")
 
+print(f"{__name__ = }")
+
+
 if __name__ == '__main__':
+    # if not imported as a module
     main(sys.argv[1:])  # Pass command line args (minus script name) to main()

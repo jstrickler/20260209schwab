@@ -15,7 +15,7 @@ entries = [os.path.join(directory, file) for file in os.listdir(directory)]
 files = [f for f in entries if os.path.isfile(f)]
 
 # transform list of filenames into list of (filename,unixtimestamp) tuples
-files = [[f, os.stat(f)[-2]] for f in files]
+files = [(f, os.path.getmtime(f)) for f in files]
 
 # sort files by timestamp
 sorted_files = sorted(files, key=lambda e: e[1])

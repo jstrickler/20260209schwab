@@ -13,6 +13,6 @@ print('-' * 60)
 
 capitals = {'NY': 'ALBANY', 'NC': 'RALEIGH', 'CA': 'SACRAMENTO', 'VT': 'MONTPELIER'}
 
-caps = {state: capital.title() for state, capital in capitals.items()}
+caps = {capital.title(): state for state, capital in capitals.items()}
 pprint(caps)
 

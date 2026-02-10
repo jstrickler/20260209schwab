@@ -1,5 +1,5 @@
 #
-from dateutil import parser
+from dateutil import parser # must be installed with pip
 
 date_strings = [  # list of assorted date strings
     'February 1, 2021',
@@ -13,7 +13,7 @@ date_strings = [  # list of assorted date strings
     '     2-1-21     ',
     '02/01/2021',
     '1 Feb 2021',
-    'February 1st, 2021',
+    'February 1st,   2021',
     'February 1, 2021 8:09',
     '2/1/2021 8:09 PM',
     'Feb 1, 2021 5 AM',

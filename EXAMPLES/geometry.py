@@ -11,6 +11,9 @@ import math   # load math.py
 
 PI = math.pi
 
+class Foo:
+    pass
+
 def circle_area(diameter):
     """
     Compute the area of a circle from a given diameter
