@@ -24,9 +24,10 @@ def main():
         'Here is your attachment',
         f'Testing email attachments from python class at {now}\n\n',
     )
-    add_text_attachment('../DATA/parrot.txt', msg)
-    add_image_attachment('../DATA/felix_auto.jpeg', msg)
-    add_image_attachment('../DATA/zen_of_python.pdf', msg)
+#    add_text_attachment('../DATA/parrot.txt', msg)
+    add_attachment('../DATA/felix_auto.jpeg', msg)
+    add_attachment('../DATA/parrot.txt', msg)
+    add_attachment('../DATA/zen_of_python.pdf', msg)
     send_message(smtp_server, msg)
 
 
@@ -47,7 +48,7 @@ def add_text_attachment(file_path, message):
     # if filename not specified, adds text inline
 
 
-def add_image_attachment(file_path, message):
+def add_attachment(file_path, message):
     with open(file_path, 'rb') as file_in:  # read data for binary attachment
         attachment_data = file_in.read()
     mime_type = magic.from_buffer(attachment_data, mime=True)

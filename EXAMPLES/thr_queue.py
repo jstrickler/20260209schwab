@@ -16,10 +16,9 @@ class RandomWord():  # define callable class to generate words
     def __init__(self):
         with open('../DATA/words.txt') as words_in:
             self._words = [word.rstrip('\n\r') for word in words_in.readlines()]
-        self._num_words = len(self._words)
 
     def __call__(self):
-        return self._words[random.randrange(0, self._num_words)]
+        return random.choice(self._words)
 
 class Worker(Thread):  # worker thread
 

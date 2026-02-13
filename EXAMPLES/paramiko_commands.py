@@ -11,7 +11,7 @@ with paramiko.SSHClient() as ssh:  # create paramiko client
     ssh.connect(
         config['auth']['hostname'], 
         username=config['auth']['username'], 
-        password=config['auth']['password'], 
+        password=config['auth']['password'],   # password=""
     )  # connect to remote host
 
     stdin, stdout, stderr = ssh.exec_command('whoami')  # execute remote command; returns standard I/O objects

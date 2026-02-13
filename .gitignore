@@ -21,6 +21,8 @@ pubmed19n0001.xml
 /images/
 /pytests/.pytest_cache/
 requirements.txt
+chickens
+wombats
 
 ##################################################################################################
 # reveal.js ignores

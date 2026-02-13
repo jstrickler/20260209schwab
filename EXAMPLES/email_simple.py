@@ -22,7 +22,7 @@ msg = EmailMessage()  # create empty email message
 msg.set_content(MESSAGE_BODY)  # add the message body
 msg['Subject'] = MESSAGE_SUBJECT  # add the message subject
 msg['from'] = SENDER  # add the sender address
-msg['to'] = RECIPIENTS  # add a list of recipients
+msg['TO'] = RECIPIENTS  # add a list of recipients
 
 smtp = smtplib.SMTP("smtp2go.com", 2525)  # connect to SMTP server
 smtp.login(SMTP_USER, SMTP_PASSWORD)  # log into SMTP server

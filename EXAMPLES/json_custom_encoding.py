@@ -37,6 +37,7 @@ else:
 print('-' * 60)
 
 def custom_encoder(obj):  # custom JSON encoder function
+    # match/case SPM
     if isinstance(obj, date):  # check for date object
         return obj.ctime()  # convert date to string
     elif isinstance(obj, Parrot):  # check for Parrot object

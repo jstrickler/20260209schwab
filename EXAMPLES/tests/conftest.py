@@ -2,9 +2,13 @@
 from pytest import fixture
 from .silly import Silly
     
+# from other_fixtures import *
+
 @fixture
 def silly_object():
     return Silly()  # fixture returns instance of Silly
+
+# any number of fixtures here ...
 
 # predefined hook (all hooks start with 'pytest_')
 def pytest_runtest_setup(item):  # item is test function

@@ -6,4 +6,4 @@ with open('../DATA/computer_people.txt') as computer_people_in:
     # iterate over rows of data -- csv reader is an iterator
 
     for first_name, last_name, known_for, birth_date in rdr:  
-        print(f'{last_name}: {known_for}')
+        print(f'{last_name:12}: {known_for}')

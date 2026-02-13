@@ -4,6 +4,7 @@ import pytest
 def test_one():
     assert 1
 
+@pytest.mark.wombats
 @pytest.mark.beta
 @pytest.mark.alpha  # Mark with label alpha
 def test_two():

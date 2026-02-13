@@ -4,7 +4,7 @@ import pytest
 def test_one():  # Normal test -- no skipping or failing
     assert True
 
-# Uncondition skip
+# Unconditional skip
 @pytest.mark.skip(reason="can not currently test")
 def test_two():
     assert True

@@ -18,7 +18,7 @@ smtp_password = getpass("SMTP Password: ")
 # note -- use your own SMTP server...
 email_handler = logging.handlers.SMTPHandler(
     ("smtp2go.com", 2525),
-    'LOGGER@pythonclass.com',
+    'jstrickler@gmail.com',
     ['jstrickler@gmail.com'],
     'Alternate Destination Log Demo',
     ('pythonclass', smtp_password),

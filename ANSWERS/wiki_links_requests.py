@@ -1,6 +1,6 @@
 import requests
 
-URL = "https://www.wikipedia.org/"
+URL = "https://www.archive.org/"
 
 response = requests.get(URL)
 

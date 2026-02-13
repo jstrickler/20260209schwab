@@ -12,7 +12,7 @@ from dataclasses import make_dataclass
 def get_column_names(cursor):
     return [desc[0] for desc in cursor.description]
 
-def dict_cursor(cursor):
+def dict_cursor(cursor): # returns a generator
     '''Generate rows as dictionaries'''
     column_names = get_column_names(cursor)
     for row in cursor.fetchall():

@@ -18,7 +18,9 @@ class CardDeck:
     @property
     def cards(self):
         return self._cards
-    
+
+    # cards = property(cards) # getter, deleter, doc
+
     def shuffle(self):
         random.shuffle(self._cards)
 
@@ -28,7 +30,11 @@ class CardDeck:
     @classmethod
     def get_ranks(cls):
         return cls.RANKS
-    
+
+    @classmethod
+    def get_ranks(cls):
+        return cls.RANKS
+
     @staticmethod
     def double(value):
         return value * 2

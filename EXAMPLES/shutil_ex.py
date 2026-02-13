@@ -17,3 +17,5 @@ shutil.move('fred.txt', new_folder)
 shutil.rmtree(new_folder) # recursively remove folder
 
 print(f"{new_folder} exists:", os.path.exists(new_folder))
+
+shutil.make_archive('animals', 'zip', '../animals')

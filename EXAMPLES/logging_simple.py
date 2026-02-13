@@ -1,8 +1,9 @@
 import logging
 
 logging.basicConfig(
+    #   ..\logs\what\ever
     filename='../LOGS/simple.log',
-    level=logging.WARNING,
+    level=logging.DEBUG,
 )
 
 logging.warning('This is a warning') # message will be output

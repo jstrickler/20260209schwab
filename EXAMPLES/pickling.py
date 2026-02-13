@@ -1,5 +1,23 @@
 import pickle
 from pprint import pprint
+class Parrot():  # sample user-defined class (not JSON-serializable)
+    def __init__(self, name, color):
+        self._name = name
+        self._color = color
+
+    @property
+    def name(self):  # JSON does not understand arbitrary properties
+        return self._name
+
+    @property
+    def color(self):
+        return self._color
+
+parrots = [  # list of Parrot objects
+    Parrot('Polly', 'green'),  #
+    Parrot('Peggy', 'blue'),
+    Parrot('Roger', 'red'),
+]
 
 # some data structures
 airports = {
@@ -20,6 +38,7 @@ data = [  # list of data structures
     colors,
     airports,
     values,
+    parrots, 
 ]
 
 print("BEFORE:")
@@ -36,3 +55,4 @@ with open('../TEMP/pickled_data.pkl', 'rb') as pkl_in:  # open pickle file for r
 
 print("AFTER:")
 pprint(pickled_data)  # view data structures
+print(f"{pickled_data[3][0].name = }")

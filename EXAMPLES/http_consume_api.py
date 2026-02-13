@@ -14,7 +14,10 @@ def main(args):
 
     response = requests.get(
         BASE_URL + args[0],
-        params={'key': API_KEY},
+        params={'key': API_KEY},  # url params for GET
+        # data={...}   dict of data for POST/PUT/PATCH
+        # json="..."  json doc for POST/PUT/PATCH
+        timeout=5,   # timeout=(5, 10)
         # ssl, proxy, cookies, headers, etc.
     )  # send HTTP request and get HTTP response
 

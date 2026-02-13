@@ -23,4 +23,4 @@ chicago_data = [
 
 with open('../TEMP/chi_data2.csv', 'w') as chi_out:
     wtr = csv.writer(chi_out, lineterminator='\n')
-    wtr.writerows(chicago_data) # write all rows to output file
+    wtr.writerows(chicago_data[1:]) # write all rows to output file
