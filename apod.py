@@ -5,8 +5,9 @@ import requests
 
 APOD_URL = "https://api.nasa.gov/planetary/apod/"
 
-API_KEY = "Pl7oquUEi7pS0mPyqOYWSA6wbOeDK11hmiK3Wais"
-# Note: "DEMO_KEY" limits
+API_KEY = "DEMO_KEY"
+
+# DEMO_KEY limits
 #   30 requests per IP address per hour
 #   50 requests per IP address per day
 # Go to https://api.nasa.gov/index.html#signUp to get a personal API key
